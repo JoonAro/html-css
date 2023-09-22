@@ -1,0 +1,130 @@
+* {
+    /*getting rid of borders  etc*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(68, 145, 222);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(245, 245, 247);
+}
+/* width shrinks the image in the right proportion */
+img {
+    height: 200px;
+    width: auto;
+}
+
+h1 {
+    margin-bottom: 32px;
+}
+section {
+    padding: 32px;
+}
+/* Header area */
+
+header {
+    background-color:rgb(101, 193, 255);
+    text-align: left;
+}
+/*getting rid of list buttons or lines and more */
+nav ul {
+    list-style-type: none;
+}
+/*modifying header properties. Our block items are on one line*/
+header li {
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(245, 245, 247);
+}
+
+ul li a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+    background-color:rgb(90, 175, 231);
+}
+/*table*/
+
+table {
+    border-collapse: collapse;
+
+}
+td {
+    border: 1px solid black;
+    width: 200px;
+    padding: 15px;
+}
+
+thead {
+    font-weight: bold;
+    background-color:rgb(101, 193, 255);
+    color: white;
+}
+
+td, th {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid white;
+    text-align: left;
+}
+/* this overrides what is written above in td, th*/
+th {
+    border-bottom: 3px solid white;
+}
+
+.odd {
+    background-color:rgb(98, 144, 202);
+}
+.even {
+    background-color: rgb(90, 139, 198);
+}
+
+/*Boxes* for id use hashtag*/
+#boxes {
+background: url("https://source.unsplash.com/xC7Ho08RYF4") no-repeat center;
+height: 100vh;
+width: auto;
+}
+/*no spaces between number of pixels and px*/
+.box {
+    display: inline-block;
+    margin: 32px;
+    height: 200px;
+    width: 200px;
+}
+.box1,
+.box2, 
+.box3, 
+.box4, 
+.box5 {
+    background: rgb(155, 155, 155);
+    margin-bottom:10px;
+}
+
+.box1 {
+    border: 3px dotted white;
+}
+ 
+.box2 {
+    border: 7px double white;
+}
+
+.box3 {
+    border: 3px groove white;
+}
+
+.box4 {
+    border: 5px dashed white;
+    border-radius: 50%;
+}
+
+.box5 {
+    border: 5px dotted white;
+    border-radius: 20%;
+}

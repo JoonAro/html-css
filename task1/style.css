@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(0, 182, 36);}
+
+#my_id {
+    color: rgb(249, 251, 250);
+    text-align: center;
+
+}
+
+.important {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+    color:rgb(1, 63, 19);
+}
+
+/*This is a comment */

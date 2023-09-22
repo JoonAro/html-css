@@ -1,0 +1,46 @@
+body {
+    background-color: #b8860b;
+}
+
+section {
+    min-height: 25vh;
+}
+
+.cards {
+    display:flex;
+}
+
+.card {
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: 33%;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card button {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    #something2 {
+        background:black;
+    }
+    /* default flex is a row , flex works in one dimention,
+    grid works in two dimentions*/
+    .cards {
+        flex-direction: column;
+    }
+    /* cardwidth is still 33% */
+    .card {
+        width: 100%;
+        margin: 20px, 0;
+
+    }
+}
+

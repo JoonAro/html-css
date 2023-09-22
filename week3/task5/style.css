@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* takes out margin, padding etc unless we say otherwise */
+}
+
+body {
+    background-color:rgb(35, 101, 9);
+    font-family: Raleway, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+}
+
+#container {
+    margin: 50px auto;
+    margin-bottom: 10px;
+    width: 300px;
+    /* to center horizontally. auto divides the space equally. It needs the width to work */
+}
+.form-wrap {
+    background: white;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 20px;
+}
+
+.form-group label {
+    display:block;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #474747;
+    text-align: left;
+
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+
+}
+
+.form-wrap button {
+    width: 80%;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-wrap .bottom-text {
+    font-size: 12px;
+
+}
+
+footer {
+    margin: 20px auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form-wrap .bottom-text a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+color: white;
+font-weight: bold;
+}
+
+button a:hover {
+background: chocolate;
+}
