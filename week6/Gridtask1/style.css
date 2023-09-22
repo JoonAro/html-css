@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +11,76 @@ body {
 
 .grid-container {
     display: grid;
+    max-width: 1000px;
     background-color: #b3b0b0;
-    grid-template-columns: auto auto auto auto;
+    /* repeat does the same thing 4 times so 4 columns height 100px */
+    grid-template-columns: repeat(4, auto);
+    /* changed width to auto */
+    grid-template-rows: 100px 100px 100px 100px;
     grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+.item {
+    background: white;
+}
+/* pick first of our items */
+.item:first-child {
+    background: green;
+    /* span means it spans over 4 units(columns in this case */
+    grid-column: 1 / span 4;
+    
+}
+
+.item:last-child {
+    background: yellow;
+    /* columns last child item10 spans over 4 columns
+    wich is full width of our grid */
+    grid-column: 1 / span 4;
+}
+
+.item2 {
+    background: blue;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+}
+
+.areas-container {
+    display: grid;
+    grid-template-areas: 
+    "whatever whatever whatever whatever"
+    "left main main aside"
+    "left main main aside"
+    "left main main aside"
+    "footer footer footer footer";
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+    /* generated rows use this sizing */
+}
+
+.header {
+    grid-area: whatever;
+    background: green;
+    min-height: 100px;
+    padding: 1rem;
+}
+
+.left {
+    grid-area: left;
+    background: blue;
+}
+
+.main {
+    grid-area: main;
+    background: pink;
+}
+
+.aside {
+    grid-area: aside;
+    background: yellow;
+}
+
+.footer {
+    grid-area: footer;
+    background: beige;
 }
