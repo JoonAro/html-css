@@ -1,0 +1,87 @@
+:root {
+    --primary-color: teal;
+    --secondary-color: steelblue;
+    --neutral-color: cornsilk;
+    --dark-color: #000000;
+    --light-color: #e3ecf9;
+    --highlight-color: orange;
+    --font: Spartan, swap;
+    --basic-size: 10rem;
+}
+
+body {
+    display:inline-block;
+    background: var(--secondary-color);
+    font-family: var(--font);
+    height: 100vh;
+
+}
+
+.first-task {
+    display: grid;
+    min-height:10rem;
+    max-width: 10rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transition: all 1s ease-in-out;
+}
+
+.first-task:hover {
+    min-height: 15rem;
+    max-width: 15rem;
+    background: var(--neutral-color);
+}
+
+.second-task {
+    display: grid;
+    min-height:10rem;
+    max-width: 10rem;
+    background: var(--primary-color);
+    transition: all 1s ease-in-out;
+}
+
+.second-task:hover {
+    transform: rotate(180deg);
+    background: var(--highlight-color);
+}
+
+.third-task {
+    display: grid;
+    min-height:10rem;
+    max-width: 10rem;
+    background: var(--primary-color);
+    transition: all 1s ease-in-out;
+    color: var(--primary-color);
+}
+
+.third-task:hover {
+    min-height:5rem;
+    max-width: 5rem;
+    color:azure;
+}
+
+.fifth-task {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1rem;
+    border-style: solid;
+    border-color: var(--primary-color);
+    min-height:10rem;
+    max-width: 10rem;
+    background: var(--primary-color);
+    transition: all 1s ease-in-out;
+}
+
+.fifth-task:hover {
+    border-color:#000000;
+}
+
+.animated-circle {
+    display: grid;
+    min-height:10rem;
+    max-width: 10rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transition: all 1s ease-in-out;
+}
