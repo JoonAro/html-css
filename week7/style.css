@@ -1,0 +1,66 @@
+:root {
+    /* doubledash to name a variable value*/
+    --primary-color: teal;
+    --secondary-color: steelblue;
+    --neutral-color: cornsilk;
+    --dark-color: #333;
+    --light-color: #fff;
+    --font: "Comfortaa", cursive;
+    --transform-hover: all 1s ease-in-out;
+    --basic-shadow: 3px 3px 5px var(--dark-color);
+    --basic-text-shadow: 1px 1px 1px var(--light-color);
+    --hover-shadow: 10px 10px 20px var(--dark-color);
+}
+
+body {
+    /* calling variable value */
+    font-family: var(--font);
+    background: var(--neutral-color);
+    color: var(--light-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.item {
+    background: var(--primary-color);
+    min-height: 300px;
+    font-size: 3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px var(--light-color), var(--basic-shadow);
+    /* horizontal vertical and size. Color inside variable*/
+    transition: all 1s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: inset 0 0 50px var(--dark-color);
+    /* inset casts shadow inside the area */
+    background: var(--secondary-color);
+    
+}
+
+.two {
+    height: 100px;
+    width: 100px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--basic-text-shadow), var(--basic-shadow);
+    box-shadow: 0 3px 10px var(--dark-color), inset 0 0 5px var(--dark-color);
+    transition: height 2s, width 2s, font-size 4s, border-radius 4s, box-shadow 4s;
+}
+
+.two:hover {
+    height: 400px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 0%;
+    box-shadow: 0 3px 20px var(--dark-color), inset 0 0 10px var(--dark-color);
+}
