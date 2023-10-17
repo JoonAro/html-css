@@ -51,61 +51,45 @@ header li {
     flex: 1;
 }
 
-main {
-    padding: 0 1.5rem;
+/* main {
     text-align: center;
-/*     background-image: linear-gradient(to bottom, rgb(68, 68, 255), rgb(0, 0, 0)); */
-}
+    /*  background-image: linear-gradient(to bottom, rgb(68, 68, 255), rgb(0, 0, 0)); 
+} 
+*/
+
 
 h1 {
     margin: 2rem;
 }
 
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: left;
+   /*  margin: 10rem; */
 }
 
-.textBox {
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    min-width: 750px;
-    /* height: 500px; */
-    /* background: orange; */
-    padding: 1rem;
-}
-
-#first {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-wrap:wrap-reverse;
-    min-height: 470px;
-
-}
+ #first {
+    padding: 4rem;
+    text-align: left;
+    
+} 
 #second {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-wrap:wrap;
-    min-height: 470px;
-
+    background:rgb(223, 145, 0);
+    padding: 4rem;
+    text-align: left;
+}
+#image2 {
+    float: left;
+    margin: 0 2rem 0 0;
 }
 #third {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-wrap:wrap-reverse;
-    min-height: 470px;
-
+    padding: 4rem;
+    text-align: left;
 }
 /*
 #second {
@@ -121,13 +105,16 @@ h2 {
 
 }
 p {
-    margin-bottom: 20px;
+    font-size: x-large;
 }
 img {
+    /*
     object-fit: cover;
-    width: 100%
-   /*  max-width: 20%;
-    max-height: 20%;  */
+     width: 100%;
+    width: 600px; */
+    width: 40vw;
+    float: right;
+    margin-left: 2rem;
 }
 */
 #logo {
