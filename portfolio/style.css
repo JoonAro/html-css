@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a:link {
+    text-decoration: none;
+    color: rgb(199, 203, 207);
+  }
+a:visited {
+    text-decoration: none;
+    color: rgb(199, 203, 207);
+  }
 body {
     /* background-image: url(softwaredeveloper.jpg); */
     background-image: linear-gradient(to bottom, rgb(68, 68, 255), rgb(0, 0, 0));
@@ -15,40 +22,58 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
-background-color: rgb(0, 0, 0);
-/* background-image: url(navbar.png); */
-/* background-size: cover; */
-    color: white;
+    height: 100vh;
+background-color: rgba(0, 0, 0, 0.482);
+background-image: url(https://images.pexels.com/photos/301489/pexels-photo-301489.jpeg);
+ background-size: cover; 
+ object-fit: cover;
+    /* color: white; */
    /*  margin-bottom: 30px;
     padding: 30px; */
+
 }
 #logo {
-    display: flex;
-    flex: 3;
-    max-height: 200px;
-    padding: 2rem;
+    /* display: flex;
+    align-items: left;
+    justify-content: space-between; */
+    height: 150px;
+     /* padding: 2rem; */
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items:flex-start; */
 }
 nav ul {
     display: flex;
     list-style-type: none;
     align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
 }
 
 header li {
-  /*   display:inline-block; */
+  /* display: inline-block; */
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: row;
   
-  padding: 5rem;
+  padding-right: 5rem;
 
 }
 .link {
-    display: flex;
-    flex: 1;
+    text-decoration: none;
+}
+
+.link:visited {
+    text-decoration: none;
+    color: rgb(199, 203, 207);
+
 }
 
 /* main {
@@ -59,7 +84,7 @@ header li {
 
 
 h1 {
-    margin: 2rem;
+    margin: 18.5rem 0 0 0;
 }
 
 h2 {
@@ -79,10 +104,11 @@ h2 {
     
 } 
 #second {
-    background:rgb(223, 145, 0);
+    background:rgba(223, 145, 0, 0.444);
     padding: 4rem;
     text-align: left;
 }
+
 #image2 {
     float: left;
     margin: 0 2rem 0 0;
@@ -107,7 +133,7 @@ h2 {
 p {
     font-size: x-large;
 }
-img {
+.mainContainer img {
     /*
     object-fit: cover;
      width: 100%;
