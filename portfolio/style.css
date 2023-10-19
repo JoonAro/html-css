@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 a:link {
     text-decoration: none;
     color: aliceblue;
@@ -12,7 +16,7 @@ a:visited {
     color: aliceblue;
   }
 body {
-    background-image: linear-gradient(to bottom, black,rgb(28, 28, 110), rgb(15, 15, 53));
+    background-image: linear-gradient(to bottom, rgb(0, 1, 51),rgb(28, 28, 110), rgb(15, 15, 53));
     background-color: rgb(0, 0, 0);
     font-family: Unna, serif;
     font-size: x-large;
@@ -26,7 +30,10 @@ header {
     flex-direction: column;
     width: 100vw;
     height: fit-content;
-background-color: rgba(118, 97, 255, 0.078);
+background-color: rgba(0, 0, 0, 0.07);
+border-bottom: 3px;
+    border-bottom-style: solid;
+    border-color: rgba(255, 255, 255, 0.075);
 /* background-image: url(https://images.pexels.com/photos/301489/pexels-photo-301489.jpeg); */
  /* background-size: cover; 
  object-fit: cover; */
@@ -123,6 +130,9 @@ main {
     align-items: center;
 } 
 
+h1 {
+    padding-top: 2rem;
+}
 
 header h1 {
     margin: 19.5rem 0 0 0;
@@ -146,7 +156,7 @@ h2 {
     
 } 
 #second {
-    background:rgba(234, 152, 0, 0.584);
+    background:rgba(234, 152, 0, 0.479);
     padding: 4rem;
     text-align: left;
     padding-bottom: 10rem;
@@ -162,10 +172,6 @@ h2 {
     padding-bottom: 10rem;
     /* background: rgba(178, 172, 255, 0.181); */
 }
-/*
-#second {
-    width: 40vw;
-} */
 .imgContainer {
     display: flex;
     justify-content: center;
@@ -291,5 +297,56 @@ margin: 0.5rem;
 button {
     height: 40px;
     width: 200px;
+    border-radius: 4px;
+    background: rgb(255, 115, 1);
 }
+.cardHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:50vh;
+    width: 95vw;
+    border:2px;
+    border-color:rgba(240, 248, 255, 0.069);
+    border-style:solid;
+    border-radius: 6px;
+    margin: 30px;
+    padding:2rem;
+    background: rgba(56, 255, 1, 0.069);
+}
+/* .cardHolder img{ 
+    
+    
+}
+*/
+.card h3 {
+    padding: 0 0 1rem 0;
+
+}
+
+.card p {
+    padding: 1rem 0 0 0;
+}
+.imgHolder {
+    width:fit-content;
+    min-width: 300px;
+    min-height: 30vh;
+    object-fit:contain;
+    background: blue;
+}
+
+.imgHolder img{
+    float:none;
+    object-fit: fill;
+
+}
+
 
