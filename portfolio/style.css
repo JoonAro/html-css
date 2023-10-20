@@ -349,4 +349,74 @@ button {
 
 }
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    background: white;
+    margin: 5rem;
+}
 
+.item {
+    background: rgb(60, 0, 240);
+    min-height: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.one {
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_1280.jpg);
+}
+
+.two {
+    grid-column: 2 / span 2;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/22/03/35/drop-1759703_1280.jpg);
+}
+
+.three {
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_1280.jpg);
+}
+.four {
+    grid-row: 2 / span 2;
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/30/10/42/spring-2553958_1280.jpg);
+}
+
+.five {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/17/21/25/fox-1748640_1280.jpg);
+}
+.six {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/10/10/52/bee-8244643_1280.jpg);
+}
+
+.seven {
+    background-image: url(https://cdn.pixabay.com/photo/2015/11/10/08/13/ladybug-1036453_1280.jpg);
+}
+
+.eight {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+    background-image: url(https://cdn.pixabay.com/photo/2023/09/06/08/45/wallpaper-8236667_1280.jpg);
+}
+.nine {
+    grid-column: 3;
+    grid-row:4;
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/16/12/50/chrysanthemum-1332994_1280.jpg);
+}
+.ten {
+    grid-row: 5;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/08/31/animal-1868436_1280.jpg);
+}
+.eleven {
+    grid-row:4;
+    grid-column: 1;
+    background-image: url(https://cdn.pixabay.com/photo/2020/11/02/07/51/leaves-5705990_1280.jpg);
+}
+.twelve {
+    grid-column: 1 / span 3;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/43/beach-1846040_1280.jpg);
+}
