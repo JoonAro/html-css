@@ -198,7 +198,6 @@ p {
     float: right;
     margin-left: 2rem;
 }
-*/
 #logo {
     min-width: 100px;
     max-width: 100%;
@@ -307,7 +306,7 @@ button {
 }
 .cardHolder {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
@@ -318,14 +317,18 @@ button {
     justify-content: center;
     align-items: center;
     min-height:50vh;
-    width: 95vw;
-    border:2px;
+    width: 28vw;
+    border:1px;
     border-color:rgba(240, 248, 255, 0.069);
     border-style:solid;
     border-radius: 6px;
-    margin: 30px;
-    padding:2rem;
+    margin: 5px;
+    padding: 2vw;
     background: rgba(56, 255, 1, 0.069);
+}
+.flexContainer {
+    display: flex;
+    flex-direction: column;
 }
 /* .cardHolder img{ 
     
@@ -341,18 +344,27 @@ button {
     padding: 1rem 0 0 0;
 }
 .imgHolder {
-    width:fit-content;
-    min-width: 300px;
-    min-height: 30vh;
-    object-fit:contain;
+    /* width:fit-content; */
+    width: 23vw;
+    height: 19vw;
+    /* object-fit:contain; */
     background: blue;
+    background-image: url(speedgameImg.png);
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
+
 }
 
-.imgHolder img{
+#secondCard .imgHolder{
+    background-image: url(pokedexImg.png);
+}
+
+/* .imgHolder img{
     float:none;
-    object-fit: fill;
+    object-fit:
 
-}
+} */
 
 .gridContainer {
     display: grid;
@@ -492,6 +504,28 @@ button {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 90vw;
+    }
+    .imgHolder {
+        width: 50vw;
+        height: 40vw;
+        background-size: cover;
+        margin: 2vw;
+        
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .pFlex {
+        width: 25vw;
+        margin: 2vw;
+    }
+}
 @media screen and (max-width: 900px) {
     .mainContainer img {
         
@@ -510,8 +544,21 @@ button {
 
     }
 }
-@media screen and (max-width: 650px){
-    body{
-        font-size:medium;
+@media screen and (max-width: 660px){
+    .flexContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgHolder {
+        width: 80vw;
+        height: 65vw;
+        background-size: cover;
+        margin: 0;
+        
+    }
+    .pFlex {
+        width: unset;
+        /* background: red; */
+        margin: 0;
     }
 }
