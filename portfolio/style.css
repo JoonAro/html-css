@@ -192,11 +192,58 @@ h2 {
     margin: 0 2rem 0 0;
 }
 
-/* #third {
-    padding: 4rem;
-    text-align: left;
-    padding-bottom: 10rem;
-} */
+.iconHolder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon:nth-child(even) {
+    background: rgb(67, 67, 67);
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    width: 200px;
+    height: 200px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.icon h3 {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.progressBar {
+    height: 15px;
+    width: 110px;
+    background: white;
+}
+
+.progress {
+    height: 15px;
+    width: 90%;
+    background: yellow;
+}
+
+
+#progress2 {
+    width: 60%;
+    background: orange;
+}
+
+#progress3 {
+    width: 80%;
+    background: yellow;
+}
+
+#progress4 {
+    width: 100%;
+}
+
 .imgContainer {
     display: flex;
     justify-content: center;
