@@ -729,4 +729,7 @@ font-size: x-large;
         height: 200px;
     }
 
+    #readMore {
+        display: none;
+    }
 }
