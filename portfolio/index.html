@@ -23,6 +23,7 @@
         </nav>
       </header>
       <main>
+        <div class="mainVessel">
       <div class="heroBanner"></div>
       <p class="heroText">Welcome to my Portfolio</p>
     </div>
@@ -34,36 +35,47 @@
               <h3>SpeedGame</h3>
               <div class="flexContainer">
 
-                <div class="imgHolder"></div>
-                <div class="pFlex">
-                  <p>
+                <div class="imgHolder" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur."></div>
+                <div class="pFlex" id="pFlexOne">
+                  <p><button id="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
               </div>
+              <!-- <button class="readMore"data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.">Read more...</button> -->
             </div>
             <div class="card" id="secondCard">
               <h3>Pokedex</h3>
               <div class="flexContainer">
 
                 <div class="imgHolder"></div>
-                <div class="pFlex">
-                  <p>
+                <div class="pFlex" id="pFlexTwo">
+                  <p><button id="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="card">
+           <div class="card">
               <h3>SpeedGame</h3>
               <div class="flexContainer">
                 <div class="imgHolder"></div>
-                <p>
+                <div class="pFlex" id="pFlexThree">
+                <p><button id="readMore">Read more</button>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
+              </div>
               </div>
             </div>
           </div>
@@ -119,8 +131,10 @@
           </p>
         </div>
       </div>
+    </div>
     </main>
     <footer>
+      <button class="backTop" id="backToTop">↑</button>
       <!-- <div id="contactVessel"> -->
       <div class="contactforms">
         <form>
@@ -138,13 +152,7 @@
             </div>
             <div class="contactform">
               <label for="email">Email:</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email adress"
-                required
-              />
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on" autocompletetype="email"/>
             </div>
             <div class="contactform">
               <label for="message">Msg:</label>
@@ -165,5 +173,6 @@
         </form>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

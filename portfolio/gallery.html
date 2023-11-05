@@ -20,7 +20,7 @@
   <body>
     <main>
       <h1>Gallery</h1>
-    </main>
+    
     <div class="gridContainer">
       <div class="item one"></div>
       <div class="item two"></div>
@@ -35,7 +35,9 @@
       <div class="item eleven"></div>
       <div class="item twelve"></div>
     </div>
+  </main>
     <footer>
+      <button class="backTop" id="backToTop">↑</button>
       <!-- <div id="contactVessel"> -->
       <div class="contactforms">
         <form>
@@ -53,13 +55,7 @@
             </div>
             <div class="contactform">
               <label for="email">Email:</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email adress"
-                required
-              />
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on" autocompletetype="email"/>
             </div>
             <div class="contactform">
               <label for="message">Msg:</label>
@@ -80,5 +76,6 @@
         </form>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
