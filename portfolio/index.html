@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css2?family=Unna&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/logoJA.svg">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/3df27631f5.js" crossorigin="anonymous"></script>
@@ -22,7 +21,7 @@
             <li class="link"><a href="gallery.html">Gallery</a></li>
             <li class="link"><a href="#name1">Contact</a></li>
             <li>
-              <a href="index.html"><img id="logo" src="./images/logoJA.svg" /></a>
+              <a href="index.html"><img id="logo" src="./images/logoJA.svg" alt="Logo"></a>
             </li>
             <li class="link"><a href="#first">Projects</a></li>
             <li class="link"><a href="#second">Experience</a></li>
@@ -49,7 +48,7 @@
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                 pariatur."></div>
                 <div class="pFlex" id="pFlexOne">
-                  <p><button id="readMore">Read more</button>
+                  <p><button class="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
@@ -62,7 +61,7 @@
 
                 <div class="imgHolder"></div>
                 <div class="pFlex" id="pFlexTwo">
-                  <p><button id="readMore">Read more</button>
+                  <p><button class="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
@@ -74,7 +73,7 @@
               <div class="flexContainer">
                 <div class="imgHolder"></div>
                 <div class="pFlex" id="pFlexThree">
-                <p><button id="readMore">Read more</button>
+                <p><button class="readMore">Read more</button>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -86,7 +85,7 @@
         <div class="part" id="second">
           <h2>Experience</h2>
           <p>
-            <img id="image2" src="startup-593343_1280.jpg" />
+            <img id="image2" src="startup-593343_1280.jpg" alt="Teamwork image">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -161,18 +160,16 @@
                 name="name1"
                 id="name1"
                 placeholder="Enter your name"
-                required
-              />
+                required>
             </div>
             <div class="contactform">
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on" autocompletetype="email"/>
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on">
             </div>
             <div class="contactform">
               <label for="message">Msg:</label>
               <textarea
                 name="message"
-                type="text"
                 id="message"
                 required
                 placeholder="Enter message"

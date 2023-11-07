@@ -126,7 +126,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: left;
 }
 
 .part {
@@ -183,7 +182,7 @@ h2 {
 .progress {
     height: 15px;
     width: 90%;
-    background: yellow;
+    background: rgb(0, 186, 0);
 }
 
 
@@ -199,6 +198,7 @@ h2 {
 
 #progress4 {
     width: 100%;
+    background: rgb(0, 186, 0)
 }
 
 .imgContainer {
@@ -270,7 +270,7 @@ form p {
 
 .contactHolder {
     display: flex;
-    direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -305,7 +305,7 @@ button {
     background: rgb(255, 115, 1);
 }
 
-#readMore {
+.readMore {
     width: 75px;
     height: 20px;
     background: rgba(255, 255, 255, 0.435);
@@ -355,7 +355,7 @@ button {
     height: 19vw;
     background: blue;
     background-image: url(speedgameImg.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
