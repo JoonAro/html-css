@@ -1,120 +1,188 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css2?family=Unna&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logoJA.svg">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/3df27631f5.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="index.html"><img id="logo" src="logoJA.svg" /></a>
-      <nav>
-        <ul>
-          <li class="link"><a href="index.html">Home</a></li>
-          <li class="link"><a href="projects.html">Projects</a></li>
-          <li class="link"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+            <li class="link"><a href="#name1">Contact</a></li>
+            <li>
+              <a href="index.html"><img id="logo" src="./images/logoJA.svg" alt="Logo"></a>
+            </li>
+            <li class="link"><a href="#first">Projects</a></li>
+            <li class="link"><a href="#second">Experience</a></li>
+            <li class="link"><a href="#third">Skills</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="mainVessel">
+      <div class="heroBanner"></div>
+      <p class="heroText">Welcome to my Portfolio</p>
+    </div>
       <div class="mainContainer">
-        <div id="first">
-          <div class="textBox">
-            <h2>Index</h2>
-            <!-- <img src="softwaredeveloper.jpg" /> -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="imgContainer">
-            <img src="softwaredeveloper.jpg" />
-          </div>
-        </div>
-        <div id="second">
-          <div class="imgContainer">
-            <img src="startup-593343_1280.jpg" />
-          </div>
-          <div class="textBox">
-            <h2>Lalalaa</h2>
-            <!-- <img src="softwaredeveloper.jpg" /> -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <div class="part" id="first">
+          <h2>Projects</h2>
+          <div class="cardHolder">
+            <div class="card" id="firstCard">
+              <h3>SpeedGame</h3>
+              <div class="flexContainer">
+
+                <div class="imgHolder" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur."></div>
+                <div class="pFlex" id="pFlexOne">
+                  <p><button class="readMore">Read more</button>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="secondCard">
+              <h3>Pokedex</h3>
+              <div class="flexContainer">
+
+                <div class="imgHolder"></div>
+                <div class="pFlex" id="pFlexTwo">
+                  <p><button class="readMore">Read more</button>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+           <div class="card">
+              <h3>SpeedGame</h3>
+              <div class="flexContainer">
+                <div class="imgHolder"></div>
+                <div class="pFlex" id="pFlexThree">
+                <p><button class="readMore">Read more</button>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="third">
-          <div class="textBox">
-            <h2>Index</h2>
-            <!-- <img src="softwaredeveloper.jpg" /> -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="imgContainer">
-            <img src="web-1935737_1280.png" />
+        <div class="part" id="second">
+          <h2>Experience</h2>
+          <p>
+            <img id="image2" src="startup-593343_1280.jpg" alt="Teamwork image">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="part" id="third">
+          <h2>Skills</h2>
+          <div class="iconHolder">
+            <div class="icon">
+              <i class="fa-brands fa-html5 fa-2xl" style="color: #d95000;"></i>
+              <h3>HTML5</h3>
+              <div class="progressBar">
+                <div class="progress">
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-js fa-2xl" style="color: #ffb43f;"></i>
+              <h3>JavaScript
+              </h3>
+              <div class="progressBar">
+                <div class="progress" id="progress2">
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-css3-alt fa-2xl" style="color: #0042aa;"></i>
+              <h3>CSS3</h3>
+              <div class="progressBar">
+                <div class="progress" id="progress3">
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-gamepad fa-2xl" style="color: #0056d6;"></i>
+              <h3>Games</h3>
+              <div class="progressBar">
+                <div class="progress" id="progress4">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <nav>
-        <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="projects.html"></a>Projects</li>
-          <li><a href="contact.html"></a>Contact</li>
-        </ul>
-      </nav>
+      <button class="backTop" id="backToTop">↑</button>
+      <div class="contactforms">
+        <form>
+          <p>Send me a message!</p>
+          <div class="contactHolder">
+            <div class="contactform">
+              <label for="name1">Name:</label>
+              <input
+                type="text"
+                name="name1"
+                id="name1"
+                placeholder="Enter your name"
+                required>
+            </div>
+            <div class="contactform">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on">
+            </div>
+            <div class="contactform">
+              <label for="message">Msg:</label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="Enter message"
+              ></textarea>
+            </div>
+            <div class="contactform">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+          <p>© Joona Aronen 2023</p>
+        </form>
+      </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

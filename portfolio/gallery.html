@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid</title>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li class="link"><a href="index.html">Return</a></li>
+        <li class="link">
+          <a href="index.html"><img id="logo" src="./images/logoJA.svg" /></a>
+        </li>
+        <li class="link"><a href="#name1">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <h1>Gallery</h1>    
+    <div class="gridContainer">
+      <div class="item one"></div>
+      <div class="item two"></div>
+      <div class="item three"></div>
+      <div class="item four"></div>
+      <div class="item five"></div>
+      <div class="item six"></div>
+      <div class="item seven"></div>
+      <div class="item eight"></div>
+      <div class="item nine"></div>
+      <div class="item ten"></div>
+      <div class="item eleven"></div>
+      <div class="item twelve"></div>
+    </div>
+  </main>
+    <footer>
+      <button class="backTop" id="backToTop">↑</button>
+      <div class="contactforms">
+        <form>
+          <p>Send me a message!</p>
+          <div class="contactHolder">
+            <div class="contactform">
+              <label for="name1">Name:</label>
+              <input
+                type="text"
+                name="name1"
+                id="name1"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="contactform">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on" autocompletetype="email"/>
+            </div>
+            <div class="contactform">
+              <label for="message">Msg:</label>
+              <textarea
+                name="message"
+                type="text"
+                id="message"
+                required
+                placeholder="Enter message"
+              ></textarea>
+            </div>
+            <div class="contactform">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+          <p>© Joona Aronen 2023</p>
+        </form>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
