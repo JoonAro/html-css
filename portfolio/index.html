@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +8,29 @@
       rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/logoJA.svg">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    >
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/3df27631f5.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
         <nav>
+          <button class="mobile">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <img id="logo" src="./images/logoJA.svg" alt="Logo">
           <ul>
             <li>
               <a href="index.html">Home</a>
             </li>
-            <li class="link"><a href="gallery.html">Gallery</a></li>
-            <li class="link"><a href="#name1">Contact</a></li>
-            <li>
-              <a href="index.html"><img id="logo" src="./images/logoJA.svg" alt="Logo"></a>
-            </li>
             <li class="link"><a href="#first">Projects</a></li>
             <li class="link"><a href="#second">Experience</a></li>
             <li class="link"><a href="#third">Skills</a></li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+            <li class="link"><a href="#name1">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -48,7 +53,7 @@
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                 pariatur."></div>
                 <div class="pFlex" id="pFlexOne">
-                  <p><button class="readMore">Read more</button>
+                  <p class="readP"><button class="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
@@ -61,7 +66,7 @@
 
                 <div class="imgHolder"></div>
                 <div class="pFlex" id="pFlexTwo">
-                  <p><button class="readMore">Read more</button>
+                  <p class="readP"><button class="readMore">Read more</button>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
@@ -73,7 +78,7 @@
               <div class="flexContainer">
                 <div class="imgHolder"></div>
                 <div class="pFlex" id="pFlexThree">
-                <p><button class="readMore">Read more</button>
+                <p class="readP"><button class="readMore">Read more</button>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -180,6 +185,13 @@
             </div>
           </div>
           <p>© Joona Aronen 2023</p>
+          <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" >
+            </a>
+        </p>
         </form>
       </div>
     </footer>
