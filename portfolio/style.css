@@ -8,6 +8,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    padding: 0.5rem 1.5vw;
+    margin: 0 1vw;
+}
+
 a:link {
     text-decoration: none;
     color: aliceblue;
@@ -72,16 +77,13 @@ header {
 
 #logo {
     position: relative;
-    height: 100px;
-}
-
-#logo:hover {
-    opacity: 0.9;
+    height: 80px;
+    padding: 0 2.5vw;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav ul {
@@ -89,17 +91,27 @@ nav ul {
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem;
 }
 
-header li {
-    display: flex;
-    flex-direction: row;
-    padding: 0 10% 0 10%;
+a:hover {
+    color: white;
+    border-bottom: 2px solid orange;
 }
 
-header li:hover {
-    opacity: 0.8;
+.mobile {
+    display: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    transition-property: border;
+}
+
+.mobile:hover {
+    background-color: #0109a9;
+    color: rgb(251, 174, 85);
+    border: 2px solid rgb(251, 174, 85);
 }
 
 main {
@@ -114,7 +126,7 @@ main {
 }
 
 h1 {
-    padding-top: 10rem;
+    padding-top: 7.5rem;
     padding-bottom: 3rem;
 }
 
@@ -151,6 +163,8 @@ h2 {
 .iconHolder {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon:nth-child(even) {
@@ -163,8 +177,8 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     background: #333;
     border-radius: 10px;
 }
@@ -306,6 +320,7 @@ button {
 }
 
 .readMore {
+    display: block;
     width: 75px;
     height: 20px;
     background: rgba(255, 255, 255, 0.435);
@@ -450,6 +465,7 @@ button {
 }
 
 #backToTop {
+    display: none;
     position: fixed;
     bottom: 6rem;
     right: 1rem;
@@ -457,9 +473,10 @@ button {
     height: 50px;
     border-radius: 50%;
     border: none;
-    background-color: #f0f8ff77;
+    background-color: #00000080;
     font-size: xx-large;
     padding-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.503);
 }
 
 .pFlex {
@@ -475,7 +492,8 @@ button {
 }
 
 #backToTop:hover {
-    background-color: hsla(208, 100%, 97%, 0.646);
+    border: 2px solid orange;
+    color: orange;
 }
 
 @media screen and (max-width: 1150px) {
@@ -491,7 +509,6 @@ button {
     }
 
     .item {
-
         min-height: 360px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -566,11 +583,61 @@ button {
 
     .item {
         min-height: 40vw;
+    }
 
+    nav ul {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        background-color: #0008a455;
+        color: rgb(255, 165, 62);
+    }
+
+    ul.responsive {
+        display: block;
+        background-color: #00000080;
+        position: absolute;
+        right: 13px;
+        top: 95px;
+        width: 300px;
+    }
+
+    ul.responsive li {
+        display: block;
+        padding: 1.5rem;
+        border: 1px solid #00000080;
+    }
+
+    ul.responsive li:hover {
+        background-color: #00000080;
+        border-color: orange;
+    }
+
+    a {
+        padding: 24px 180px 24px 0;
+        margin: 0;
+    }
+
+    a:hover {
+        border-bottom: none;
+    }
+
+    .iconHolder {
+        margin: 0 6rem;
+    }
+
+    .icon {
+        height: 200px;
+        width: 200px;
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 680px) {
     .card {
         width: 90vw;
     }
@@ -585,7 +652,6 @@ button {
         height: 65vw;
         background-size: cover;
         margin: 0;
-
     }
 
     .pFlex {
@@ -599,7 +665,21 @@ button {
         height: 200px;
     }
 
-    #readMore {
+    .readP button {
         display: none;
+    }
+
+    .iconHolder {
+        margin: 0;
+    }
+
+    .icon {
+        margin: 0.5rem;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .icon h3 {
+        padding: 5vw;
     }
 }

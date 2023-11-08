@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Grid</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    >
+    <link rel="icon" type="image/x-icon" href="/images/logoJA.svg">
+    <title>Gallery</title>
   </head>
+  <body>
   <header>
     <nav>
+      <button class="mobile">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+      <img id="logo" src="./images/logoJA.svg" alt="Logo">
       <ul>
-        <li class="link"><a href="index.html">Return</a></li>
-        <li class="link">
-          <a href="index.html"><img id="logo" src="./images/logoJA.svg" /></a>
+        <li>
+          <a href="index.html">Home</a>
         </li>
+        <li class="link"><a href="./index.html#first">Projects</a></li>
+        <li class="link"><a href="./index.html#second">Experience</a></li>
+        <li class="link"><a href="./index.html#third">Skills</a></li>
+        <li class="link"><a href="gallery.html">Gallery</a></li>
         <li class="link"><a href="#name1">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <body>
     <main>
       <h1>Gallery</h1>    
     <div class="gridContainer">
@@ -49,17 +61,16 @@
                 id="name1"
                 placeholder="Enter your name"
                 required
-              />
+              >
             </div>
             <div class="contactform">
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on" autocompletetype="email"/>
+              <input type="email" name="email" id="email" placeholder="Enter your email adress" required autocomplete="on">
             </div>
             <div class="contactform">
               <label for="message">Msg:</label>
               <textarea
                 name="message"
-                type="text"
                 id="message"
                 required
                 placeholder="Enter message"
