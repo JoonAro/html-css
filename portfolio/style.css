@@ -348,7 +348,6 @@ button {
     margin: 5px;
     padding: 2vw;
     background: rgb(15, 27, 105);
-    z-index: 1;
 }
 
 .flexContainer {
@@ -592,7 +591,7 @@ button {
     .mobile {
         display: block;
         position: absolute;
-        right: 15px;
+        right: 25px;
         top: 10px;
         background-color: #0008a455;
         color: rgb(255, 165, 62);
@@ -602,7 +601,7 @@ button {
         display: block;
         background-color: #00000080;
         position: absolute;
-        right: 13px;
+        right: 25px;
         top: 95px;
         width: 300px;
     }
